@@ -35,10 +35,6 @@ body {
     border-right: 1px solid white;
 }
 
-.end {
-    border-right: 0px none white;
-}
-
 @media screen and (min-width: 601px) {
     .holder h5 {
         font-size: 4vh;
