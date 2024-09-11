@@ -2,8 +2,97 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: white;
 }
 
 body {
     font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+.content {
+    background-image: url("../images/Visual\ 08.webp");
+    background-size: cover;  
+    padding-top: 10px;
+    overflow: hidden;
+    width: auto;
+}
+
+.content button {
+    border-radius: 50px;
+    background-color: rgb(133, 21, 177);
+    margin-top: 50px
+}
+
+.content img {
+    width: 30px;
+    height: 30px;
+    opacity: 0.8;
+    margin-right: 10px;
+}
+
+.col {
+    border-right: 1px solid white;
+}
+
+.end {
+    border-right: 0px none white;
+}
+
+@media screen and (min-width: 601px) {
+    .holder h5 {
+        font-size: 4vh;
+    }
+    .holder h1 {
+        font-size: 9.8vh;
+        font-weight: 500;
+    }
+    .holder h3 {
+        font-size: 2.5vh;
+    }
+}
+  
+@media screen and (max-width: 400px) {
+    .holder h5 {
+        font-size: 2vh;
+    }
+    .holder h1 {
+        font-size: 6.8vh;
+        font-weight: 500;
+    }
+    .holder h3 {
+        font-size: 1.5vh;
+    }
+}
+
+
+footer {
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    */
+    height: 10vh;
+    background-color: #d4d2ce;
+    display: flex;
+    width: 100%;
+}
+
+
+footer ul {
+    list-style: none;
+    display: flex;
+    margin-top: 10px;
+}
+
+footer ul li {
+    left: 0;
+    padding: 3vw;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: clamp(0.2rem, 1.8vw, 0.9rem);
+    font-weight:700;
 }
